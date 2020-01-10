@@ -1,0 +1,5 @@
+name: WEloader
+version: 0.1
+main: net.gigaclub.feier68.weloader.Main
+api-version: 1.13
+authors: [Feier68]

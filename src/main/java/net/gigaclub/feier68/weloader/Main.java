@@ -67,8 +67,6 @@ public final class Main extends JavaPlugin {
         return true;
 
     }
-
-
     public static boolean nehterSchematic() throws IOException {
         FileConfiguration config = Main.getPlugin().getConfig();
         if (!(config.isSet("Load.nether"))) {

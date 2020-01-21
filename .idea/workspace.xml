@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdba820-3306-48da-86df-4c2a7e46d334" name="Default Changelist" comment="add config&#10;add einstellbare world schematic loade&#10;add einstellbare nehter schematic loade">
+    <list default="true" id="bbdba820-3306-48da-86df-4c2a7e46d334" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/listeners/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/listeners/JoinListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WEloader-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/WEloader-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/gigaclub/feier68/weloader/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/gigaclub/feier68/weloader/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/gigaclub/feier68/weloader/listeners/JoinListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/gigaclub/feier68/weloader/listeners/JoinListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579455821815</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add config&#10;add einstellbare world schematic loade&#10;add einstellbare nehter schematic loade">
+      <created>1579629254823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579629254823</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -150,10 +150,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="734" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-2560.8.2560.1400@0.0.2560.1400" timestamp="1578678790434" />
-    <state x="905" y="290" key="CommitChangelistDialog2" timestamp="1579455982434">
+    <state x="905" y="290" key="CommitChangelistDialog2" timestamp="1579634099660">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="905" y="290" key="CommitChangelistDialog2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1579455982434" />
+    <state x="788" y="402" key="CommitChangelistDialog2/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1579634073755" />
+    <state x="905" y="290" key="CommitChangelistDialog2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1579634099660" />
     <state x="905" y="290" key="CommitChangelistDialog2/0.0.2560.1400/-2560.8.2560.1400@0.0.2560.1400" timestamp="1578689135974" />
     <state x="252" y="156" key="DiffContextDialog" timestamp="1579455922354">
       <screen x="0" y="0" width="2560" height="1400" />

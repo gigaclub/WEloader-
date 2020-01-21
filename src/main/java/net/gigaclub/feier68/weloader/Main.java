@@ -41,7 +41,7 @@ public final class Main extends JavaPlugin {
         if (worldSpawn) {
             File file = new File("plugins/WEloader/schematics/" + worldSchem);
             if (file.exists()) {
-                System.out.printf(pl + "World");
+                System.out.println(pl + "World");
                 System.out.println(pl + "File exists");
             } else {
                 System.out.println(pl + "File " + worldSchem + " dont exists");
@@ -61,7 +61,7 @@ public final class Main extends JavaPlugin {
                             .ignoreAirBlocks(false)
                             .build();
                     Operations.complete(operation);
-                    System.out.printf(pl + "Schematic Geladen");
+                    System.out.println(pl + "Schematic Geladen");
                 } catch (WorldEditException e) {
                     e.printStackTrace();
                 }
@@ -87,14 +87,12 @@ public final class Main extends JavaPlugin {
             File file = new File("plugins/WEloader/schematics/" + nehterSchem);
 
             if (file.exists()) {
-                System.out.printf(pl + "Nehter");
+                System.out.println(pl + "Nehter");
                 System.out.println(pl + "File exists");
             } else {
                 System.out.println(pl + "File " + nehterSchem + " dont exists");
                 return true;
             }
-
-
             if (!worldSpawn) {
                 World world = Bukkit.getWorld("world_nether");
                 ClipboardFormat format = ClipboardFormats.findByFile(file);
@@ -108,7 +106,7 @@ public final class Main extends JavaPlugin {
                                 .ignoreAirBlocks(false)
                                 .build();
                         Operations.complete(operation);
-                        System.out.printf(pl + "Schematic Geladen");
+                        System.out.println(pl + "Schematic Geladen");
                     } catch (WorldEditException e) {
                         e.printStackTrace();
                     }
@@ -121,12 +119,10 @@ public final class Main extends JavaPlugin {
 
         return true;
     }
-
-
     @Override
     public void onDisable() {
         String pl = "[WEloader] ";
-        System.out.printf(pl + "BB");
+        System.out.println(pl + "BB");
     }
 
     public static Main getPlugin() {
@@ -137,14 +133,12 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         plugin = this;
         String pl = "[WEloader] ";
-
-
         new File("plugins/WEloader/schematics").mkdir();
         BlockVector3 min = BlockVector3.at(-30, 150, -30);
         BlockVector3 max = BlockVector3.at(30, -8, 30);
         ProtectedCuboidRegion region = new ProtectedCuboidRegion("spawn", min, max);
 
-        System.out.printf(pl + "WELoader Geladen");
+        System.out.println(pl + "WELoader Geladen");
 
         FileConfiguration config = Main.getPlugin().getConfig();
         if (!(config.isSet("Schematic.Nether"))) {
@@ -161,14 +155,11 @@ public final class Main extends JavaPlugin {
         if (nehterSpawn)
             if (worldSpawn)
                 System.out.println(pl + "es sind beide activ");
-
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new JoinListener(), this);
-
         try {
             loadIslandSchematic();
             nehterSchematic();
-
         } catch (IOException e) {
             e.printStackTrace();
         }

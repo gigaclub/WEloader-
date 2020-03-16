@@ -10,10 +10,13 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.event.player.PlayerRespawnEvent;
 
 import java.util.HashMap;
 
@@ -28,6 +31,7 @@ public class JoinListener implements Listener {
       boolean worldSpawn = config.getBoolean("Load.world");
       if (worldSpawn) {
          Player player = event.getPlayer();
+
          if (fallcount.get(player) != null) {
             fallcount.remove(player);
          }
@@ -73,7 +77,6 @@ public class JoinListener implements Listener {
             fallcount.remove(player);
          } else {
             fallcount.put(player, 0);
-
          }
 
          World world = Bukkit.getWorld("world_the_end");
@@ -121,6 +124,39 @@ public class JoinListener implements Listener {
 
       }
    }
+
+   @EventHandler(priority = EventPriority.HIGHEST)
+   public void PlayerRespawnEvent(PlayerRespawnEvent event) {
+      Player player = event.getPlayer();
+      FileConfiguration config = Main.getPlugin().getConfig();
+      boolean nehterSpawn = config.getBoolean("Load.nether");
+      boolean worldSpawn = config.getBoolean("Load.world");
+      boolean endSpawn = config.getBoolean("Load.end");
+      if (worldSpawn) {
+         World world = Bukkit.getWorld("world");
+         Location location = new Location(world, 0.0, 126, 0.0);
+         event.setRespawnLocation(location);
+      } else if (nehterSpawn) {
+         World world = Bukkit.getWorld("world_nether");
+         Location location = new Location(world, 0.5, 101, 0.5);
+         event.setRespawnLocation(location);
+      } else if (endSpawn) {
+         World world = Bukkit.getWorld("world_the_end");
+         Location location = new Location(world, 0.0, 71, 80.0);
+         event.setRespawnLocation(location);
+      }
+
+   }
+
+   @EventHandler
+   public void PlayerDeathEvent(PlayerDeathEvent event) {
+      Player player = event.getEntity().getPlayer();
+      if (event.getEntity() == player) {
+         fallcount.put(player, 0);
+      }
+
+   }
+
 
 }
 

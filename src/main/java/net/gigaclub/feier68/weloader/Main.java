@@ -225,12 +225,15 @@ public final class Main extends JavaPlugin {
             @Override
             public void run() {
                 int mincount = count / 60;
-                if (count % 360 * 60 == 0 || count == 1260 * 60 || count == 1320 * 60 || count == 1380 * 60) {
-                    Bukkit.broadcastMessage("Die Farmwelt resettet in " + (24 - (mincount / 60)) + " Stunden!");
-                } else if (count == 1395 * 60 || count == 1410 * 60 || count == 1425 * 60 || count == 1430 * 60 || count == 1435 * 60 || count == 1439 * 60) {
-                    Bukkit.broadcastMessage("Die Farmwelt resettet in " + (1440 - mincount) + " Minuten!");
+                if (count % (360 * 60) == 0 || count == (1260 * 60) || count == (1320 * 60) || count == (1380 * 60)) {
+                    String stunde = (24 - (mincount / 60)) == 1 ? "Stunde" : "Stunden";
+                    Bukkit.broadcastMessage("Die Farmwelt resettet in " + (24 - (mincount / 60)) + " " + stunde + "!");
+                } else if (count == (1395 * 60) || count == (1410 * 60) || count == (1425 * 60) || count == (1430 * 60) || count == (1435 * 60) || count == (1439 * 60)) {
+                    String minute = (1440 - mincount) == 1 ? "Minute" : "Minuten";
+                    Bukkit.broadcastMessage("Die Farmwelt resettet in " + (1440 - mincount) + " " + minute + "!");
                 } else if (count > 86394) {
-                    Bukkit.broadcastMessage("Die Farmwelt resettet in " + (86400 - count) + " Sekunden!");
+                    String sekunde = (86400 - count) == 1 ? "Sekunde" : "Sekunden";
+                    Bukkit.broadcastMessage("Die Farmwelt resettet in " + (86400 - count) + " " + sekunde + "!");
                 } else if (mincount == 1440) {
                     Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "stop");
                 }

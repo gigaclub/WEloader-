@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bbdba820-3306-48da-86df-4c2a7e46d334" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/listeners/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/gigaclub/feier68/weloader/listeners/JoinListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WEloader-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/WEloader-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +171,28 @@
       <option name="project" value="LOCAL" />
       <updated>1584358457936</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add spawnloc&#10;reset falldmg count on deaht">
+      <created>1584385755609</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584385755609</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add spawnloc&#10;reset falldmg count on deaht">
+      <created>1584385780585</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584385780585</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add spawnloc&#10;reset falldmg count on deaht">
+      <created>1584385815058</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584385815058</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -187,7 +205,8 @@
     <MESSAGE value="add config&#10;und anderes" />
     <MESSAGE value="erster falldmg entfernen" />
     <MESSAGE value="add stop timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add stop timer" />
+    <MESSAGE value="add spawnloc&#10;reset falldmg count on deaht" />
+    <option name="LAST_COMMIT_MESSAGE" value="add spawnloc&#10;reset falldmg count on deaht" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -205,16 +224,16 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="863" y="454" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1584377804548" />
-    <state x="905" y="290" key="CommitChangelistDialog2" timestamp="1584385780176">
+    <state x="905" y="290" key="CommitChangelistDialog2" timestamp="1584386085296">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="788" y="402" key="CommitChangelistDialog2/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1579634172988" />
-    <state x="905" y="290" key="CommitChangelistDialog2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1584385780176" />
+    <state x="905" y="290" key="CommitChangelistDialog2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1584386085296" />
     <state x="905" y="290" key="CommitChangelistDialog2/0.0.2560.1400/-2560.8.2560.1400@0.0.2560.1400" timestamp="1578689135974" />
-    <state x="252" y="156" key="DiffContextDialog" timestamp="1579455922354">
+    <state x="252" y="156" width="2048" height="1149" key="DiffContextDialog" timestamp="1584385968920">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="252" y="156" key="DiffContextDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1579455922354" />
+    <state x="252" y="156" width="2048" height="1149" key="DiffContextDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1584385968920" />
     <state x="789" y="407" key="FileChooserDialogImpl" timestamp="1579716836463">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -259,6 +278,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="945" y="399" key="NewModule_or_Project.wizard/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1578752224033" />
+    <state x="1035" y="410" key="RollbackChangesDialog" timestamp="1584386064314">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1035" y="410" key="RollbackChangesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1584386064314" />
     <state x="760" y="275" key="SettingsEditor" timestamp="1579635140173">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
